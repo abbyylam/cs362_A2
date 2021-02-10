@@ -1,4 +1,5 @@
 def check_pwd(pwd):
+    SYMBOLS = "~`!@#$%^&*()_+-="
     for c in pwd:
         if c.islower():
             continue
@@ -7,5 +8,9 @@ def check_pwd(pwd):
             continue
             return True
         if c.isdigit():
+            continue
+            return True
+        if c in SYMBOLS:
+            continue
             return True
     return False
