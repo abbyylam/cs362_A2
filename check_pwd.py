@@ -6,4 +6,6 @@ def check_pwd(pwd):
         if c.isupper():
             continue
             return True
+        if c.isdigit():
+            return True
     return False
