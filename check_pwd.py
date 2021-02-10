@@ -13,4 +13,7 @@ def check_pwd(pwd):
         if c in SYMBOLS:
             continue
             return True
+        if len(pwd) >= 8:
+            continue
+            return True
     return False
