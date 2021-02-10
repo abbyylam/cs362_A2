@@ -3,4 +3,7 @@ def check_pwd(pwd):
         if c.islower():
             continue
             return True
+        if c.isupper():
+            continue
+            return True
     return False
