@@ -20,6 +20,9 @@ class TestCase(unittest.TestCase):
         self.assertFalse(check_pwd(symbols))
     def test6(self):
         min_length = "passwor"
-        self.assertTrue(check_pwd(min_length))
+        self.assertFalse(check_pwd(min_length))
+    def test7(self):
+        max_length = "passwordismaximumlength"
+        self.assertTrue(check_pwd(max_length))
 if __name__ == '__main__':
     unittest.main(verbosity=2)
