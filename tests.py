@@ -12,5 +12,8 @@ class TestCase(unittest.TestCase):
     def test3(self):
         uppercase = "password"
         self.assertFalse(check_pwd(uppercase))
+    def test4(self):
+        digits = "password1"
+        self.assertTrue(check_pwd(digits))
 if __name__ == '__main__':
     unittest.main(verbosity=2)
